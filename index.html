@@ -159,7 +159,7 @@
         <!-- seat left -->
         <div class="bg-green-300 lg:w-48 lg:h-12 grid grid-flow-col rounded-xl p-2 ">
           <img src="images/seat-green.png" alt="">
-          <p>Seats left</p>
+          <p> <span id="seatLeft" class="font-bold">32</span> Seats left</p>
         </div>
       </div>
       <div class="bg-slate-100 w-full rounded-xl lg:mt-9 lg:mx-7">
@@ -222,7 +222,7 @@
         </div>
         <hr class="border-dashed mx-7 border-gray-600 ">
         <!-- seat number -->
-         <div class="mt-10  flex flex-col gap-4">
+         <div onclick="setBg()" id="seat" class=" mt-10  flex flex-col gap-4 ">
           <div class="float-end">
             <div class="bg-gray-400 w-16 lg:w-20 rounded-xl p-2 float-right lg:mr-24 ">
               <i class="fa-solid fa-wheelchair"></i>
@@ -230,59 +230,59 @@
           </div>
           <div class=" justify-around  grid grid-cols-5 mt-10">
             <div class="bg-white pl-12">A</div>
-            <div class="w-16  lg:w-20 bg-gray-400 p-2 rounded-xl"><p>A1</p></div>
-            <div class="w-16 lg:w-20 bg-gray-400 p-2 rounded-xl "><p>A2</p></div>
-            <div class="w-16 lg:w-20 bg-gray-400 p-2 rounded-xl"><p>A3</p></div>
-            <div class="w-16 lg:w-20 bg-gray-400 p-2 rounded-xl"><p>A4</p></div>
+            <div id="A1" class="w-16 lg:w-20 bg-gray-400 p-2 rounded-xl"><p>A1</p></div>
+            <div id="A2" class="w-16 lg:w-20 bg-gray-400 p-2 rounded-xl"><p>A2</p></div>
+            <div id="A3" class="w-16 lg:w-20 bg-gray-400 p-2 rounded-xl"><p>A3</p></div>
+            <div id="A4" class="w-16 lg:w-20 bg-gray-400 p-2 rounded-xl"><p>A4</p></div>
           </div>
           <div class=" justify-around  grid grid-cols-5 mt-10">
             <div class="bg-white pl-12">B</div>
-            <div class="w-16 lg:w-20 bg-gray-400 p-2 rounded-xl"><p>B1</p></div>
-            <div class=" w-16 lg:w-20 bg-gray-400 p-2 rounded-xl "><p>B2</p></div>
-            <div class=" w-16 lg:w-20 bg-gray-400 p-2 rounded-xl"><p>B3</p></div>
-            <div class=" w-16 lg:w-20 bg-gray-400 p-2 rounded-xl"><p>B4</p></div>
+            <div  id="B1"  class="w-16 lg:w-20 bg-gray-400 p-2 rounded-xl"><p>B1</p></div>
+            <div  id="B2" class=" w-16 lg:w-20 bg-gray-400 p-2 rounded-xl "><p>B2</p></div>
+            <div  id="B3" class=" w-16 lg:w-20 bg-gray-400 p-2 rounded-xl"><p>B3</p></div>
+            <div  id="B4" class=" w-16 lg:w-20 bg-gray-400 p-2 rounded-xl"><p>B4</p></div>
           </div>
           <div class=" justify-around  grid grid-cols-5 mt-10">
-            <div class="bg-white pl-12">C</div>
-            <div class=" w-16 lg:w-20 bg-gray-400 p-2 rounded-xl"><p>C1</p></div>
-            <div class=" w-16 lg:w-20 bg-gray-400 p-2 rounded-xl "><p>C2</p></div>
-            <div class="w-16 lg:w-20 bg-gray-400 p-2 rounded-xl"><p>C3</p></div>
-            <div class=" w-16 lg:w-20 bg-gray-400 p-2 rounded-xl"><p>C4</p></div>
+            <div  class="bg-white pl-12">C</div>
+            <div id="C1" class=" w-16 lg:w-20 bg-gray-400 p-2 rounded-xl"><p>C1</p></div>
+            <div id="C2" class=" w-16 lg:w-20 bg-gray-400 p-2 rounded-xl "><p>C2</p></div>
+            <div id="C3" class="w-16 lg:w-20 bg-gray-400 p-2 rounded-xl"><p>C3</p></div>
+            <div id="C4" class=" w-16 lg:w-20 bg-gray-400 p-2 rounded-xl"><p>C4</p></div>
           </div>
           <div class=" justify-around  grid grid-cols-5 mt-10">
             <div class="bg-white pl-12">D</div>
-            <div class=" w-16 lg:w-20 bg-gray-400 p-2 rounded-xl"><p>D1</p></div>
-            <div class=" w-16 lg:w-20 bg-gray-400 p-2 rounded-xl "><p>D2</p></div>
-            <div class=" w-16 lg:w-20 bg-gray-400 p-2 rounded-xl"><p>D3</p></div>
-            <div class=" w-16 lg:w-20 bg-gray-400 p-2 rounded-xl"><p>D4</p></div>
+            <div id="D1" class=" w-16 lg:w-20 bg-gray-400 p-2 rounded-xl"><p>D1</p></div>
+            <div id="D2" class=" w-16 lg:w-20 bg-gray-400 p-2 rounded-xl "><p>D2</p></div>
+            <div id="D3" class=" w-16 lg:w-20 bg-gray-400 p-2 rounded-xl"><p>D3</p></div>
+            <div id="D4" class=" w-16 lg:w-20 bg-gray-400 p-2 rounded-xl"><p>D4</p></div>
           </div>
           <div class=" justify-around  grid grid-cols-5 mt-10">
             <div class="bg-white pl-12">E</div>
-            <div class=" w-16 lg:w-20 bg-gray-400 p-2 rounded-xl"><p>E1</p></div>
-            <div class="w-16 lg:w-20 bg-gray-400 p-2 rounded-xl "><p>E2</p></div>
-            <div class=" w-16 lg:w-20 bg-gray-400 p-2 rounded-xl"><p>E3</p></div>
-            <div class=" w-16 lg:w-20 bg-gray-400 p-2 rounded-xl"><p>E4</p></div>
+            <div id="E1" class=" w-16 lg:w-20 bg-gray-400 p-2 rounded-xl"><p>E1</p></div>
+            <div id="E2" class="w-16 lg:w-20 bg-gray-400 p-2 rounded-xl "><p>E2</p></div>
+            <div id="E3" class=" w-16 lg:w-20 bg-gray-400 p-2 rounded-xl"><p>E3</p></div>
+            <div id="E4" class=" w-16 lg:w-20 bg-gray-400 p-2 rounded-xl"><p>E4</p></div>
           </div>
           <div class=" justify-around  grid grid-cols-5 mt-10">
             <div class="bg-white pl-12">F</div>
-            <div class=" w-16 lg:w-20 bg-gray-400 p-2 rounded-xl"><p>F1</p></div>
-            <div class="w-16 lg:w-20 bg-gray-400 p-2 rounded-xl "><p>F2</p></div>
-            <div class=" w-16 lg:w-20 bg-gray-400 p-2 rounded-xl"><p>F3</p></div>
-            <div class=" w-16 lg:w-20 bg-gray-400 p-2 rounded-xl"><p>F4</p></div>
+            <div id="F1" class=" w-16 lg:w-20 bg-gray-400 p-2 rounded-xl"><p>F1</p></div>
+            <div id="F2" class="w-16 lg:w-20 bg-gray-400 p-2 rounded-xl "><p>F2</p></div>
+            <div id="F3" class=" w-16 lg:w-20 bg-gray-400 p-2 rounded-xl"><p>F3</p></div>
+            <div id="4" class=" w-16 lg:w-20 bg-gray-400 p-2 rounded-xl"><p>F4</p></div>
           </div>
           <div class=" justify-around  grid grid-cols-5 mt-10">
             <div class="bg-white pl-12">G</div>
-            <div class=" w-16 lg:w-20 bg-gray-400 p-2 rounded-xl"><p>G1</p></div>
-            <div class="w-16 lg:w-20 bg-gray-400 p-2 rounded-xl "><p>G2</p></div>
-            <div class=" w-16 lg:w-20 bg-gray-400 p-2 rounded-xl"><p>G3</p></div>
-            <div class=" w-16 lg:w-20 bg-gray-400 p-2 rounded-xl"><p>G4</p></div>
+            <div id="G1" class=" w-16 lg:w-20 bg-gray-400 p-2 rounded-xl"><p>G1</p></div>
+            <div id="G2" class="w-16 lg:w-20 bg-gray-400 p-2 rounded-xl "><p>G2</p></div>
+            <div id="G3" class=" w-16 lg:w-20 bg-gray-400 p-2 rounded-xl"><p>G3</p></div>
+            <div id="G4" class=" w-16 lg:w-20 bg-gray-400 p-2 rounded-xl"><p>G4</p></div>
           </div>
           <div class=" justify-around  grid grid-cols-5 mt-10">
             <div class="bg-white pl-12">H</div>
-            <div class=" w-16 lg:w-20 bg-gray-400 p-2 rounded-xl"><p>H1</p></div>
-            <div class="w-16 lg:w-20 bg-gray-400 p-2 rounded-xl "><p>H2</p></div>
-            <div class=" w-16 lg:w-20 bg-gray-400 p-2 rounded-xl"><p>H3</p></div>
-            <div class=" w-16 lg:w-20 bg-gray-400 p-2 rounded-xl"><p>H4</p></div>
+            <div id="H1" class=" w-16 lg:w-20 bg-gray-400 p-2 rounded-xl"><p>H1</p></div>
+            <div id="H2"class="w-16 lg:w-20 bg-gray-400 p-2 rounded-xl "><p>H2</p></div>
+            <div id="H3"class=" w-16 lg:w-20 bg-gray-400 p-2 rounded-xl"><p>H3</p></div>
+            <div id="H4"class=" w-16 lg:w-20 bg-gray-400 p-2 rounded-xl"><p>H4</p></div>
           </div>
          </div>
             <!-- seat number -->
@@ -347,7 +347,8 @@
           <input type="text" placeholder="Type here" class="input input-bordered input-md w-full " />
           <p>Email ID*</p>
           <input type="text" placeholder="Type here" class="input input-bordered input-md w-full " />
-          <button class=" w-full bg-green-400 text-2xl text-white font-bold py-6 rounded-xl">Next</button>
+          <a href="sucess.html"><button  class=" w-full bg-green-400 text-2xl text-white font-bold py-6 rounded-xl">Next</button></a>
+          
          <div class="flex justify-between">
           <a class="link link-neutral">Terms and Conditions</a>
           <a class="link link-neutral">Cancellation Policy</a>
@@ -398,5 +399,6 @@
   </div>
   
   </footer>
+  <script src="calculation.js"></script>
 </body>
 </html>
