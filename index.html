@@ -68,9 +68,9 @@
         <div class=" "></div>
         <div class="hero-content text-center text-neutral-content">
           <div class="max-w-md">
-            <h1 class="mb-5 text-4xl font-bold">End-To-End Travel With <br> <span>P Paribahan</span></h1>
-            <p class="mb-5 ">A travel site is an online platform that facilitates the booking of flights, hotels, and other travel-related services.  Travel sites often offer user reviews, price comparisons, and deals to enhance the overall travel experience.</p>
-            <button class="btn btn-success ">Buy Tickets</button>
+            <h1 class="mb-5 text-4xl font-bold text-white">End-To-End Travel With <br> <span>P Paribahan</span></h1>
+            <p class="mb-5 text-white">A travel site is an online platform that facilitates the booking of flights, hotels, and other travel-related services.  Travel sites often offer user reviews, price comparisons, and deals to enhance the overall travel experience.</p>
+            <button class="btn btn-success font-medium ">Buy Tickets</button>
           </div>
         </div>
       </div>
@@ -141,15 +141,15 @@
 
    <!-- input -->
    <section class="bg-stone-50 rounded-xl  mt-14">
-    <div class=" w-full px-10  ">
+    <div class=" w-full  lg:px-10  ">
       <p class="text-center text-4xl font-bold pt-24 pb-6"> P.H Paribahan</p>
-      <p class="text-center">Ticket booking platforms simplify and enhance the process of securing seats for buses. They offer real-time information providing convenience and additional perks such as discounts and instant confirmations.</p>
+      <p class="text-center w-full px-5">Ticket booking platforms simplify and enhance the process of securing seats for buses. They offer real-time information providing convenience and additional perks such as discounts and instant confirmations.</p>
 
       <!-- time/Route -->
       <div class="cuppon   justify-center pt-10">
-        <div class="card w-full grid grid-flow-col bg-white  lg:grid lg:grid-flow-col  ">
+        <div class="card w-full l bg-white  grid grid-flow-col  ">
       <div class=" mt-8">
-        <div class="flex lg:grid lg:grid-flow-col">
+        <div class="flex  gap-1 lg:grid lg:grid-flow-col">
           <!-- greenline -->
           <div class="grid grid-flow-col lg:grid lg:grid-flow-col  ">
           <img src="images/bus-logo.png"  class="lg:ml-12 ">
@@ -157,12 +157,12 @@
         
         </div>
         <!-- seat left -->
-        <div class="bg-green-300 lg:w-48 lg:h-12 grid grid-flow-col rounded-xl p-2 ">
+        <div class="bg-green-300  lg:w-48 lg:h-12 lg:grid lg:grid-flow-col rounded-xl p-2 ">
           <img src="images/seat-green.png" alt="">
           <p> <span id="seatLeft" class="font-bold">32</span> Seats left</p>
         </div>
       </div>
-      <div class="bg-slate-100 w-full rounded-xl lg:mt-9 lg:mx-7">
+      <div class="bg-slate-100 w-full my-10 ml-9 rounded-xl lg:mt-9 lg:mx-7">
         <div class="flex justify-between p-6">
           <p>Route </p>
           <h1>Dhaka-Sylhet</h1>
@@ -193,7 +193,7 @@
       <div>
         <img src="images/info-devider.png" alt="">
       </div>
-          <div class=" justify-center pt-44">
+          <div class=" lg:justify-center lg:pt-44">
             <img src="images/fare.png" alt="">
             <h2 class=" lg:text-2xl font-bold ">550 taka </h2>
             <p class="text-sm text-gray-600">Per seat</p>
@@ -205,7 +205,7 @@
      </div>
 
 
-     <div class="bg-white mt-5 mx-10 rounded-xl grid grid-flow-row lg:grid lg:grid-flow-col">
+     <div class="bg-white mt-5 lg:mx-10 rounded-xl grid grid-flow-row lg:grid lg:grid-flow-col">
       <div class="">
         <p class="text-xl font-bold px-6 py-7">Select your seat</p>
         <hr class="border-dashed mx-7 border-gray-600 ">
@@ -222,18 +222,18 @@
         </div>
         <hr class="border-dashed mx-7 border-gray-600 ">
         <!-- seat number -->
-         <div onclick="setBg()" id="seat" class=" mt-10  flex flex-col gap-4 ">
+         <div  id="container" class=" mt-10  flex flex-col gap-4 ">
           <div class="float-end">
-            <div class="bg-gray-400 w-16 lg:w-20 rounded-xl p-2 float-right lg:mr-24 ">
+            <div class="bg-gray-400 w-16 lg:w-20 rounded-xl p-2 float-right mr-5 lg:mr-16 ">
               <i class="fa-solid fa-wheelchair"></i>
             </div>
           </div>
           <div class=" justify-around  grid grid-cols-5 mt-10">
             <div class="bg-white pl-12">A</div>
-            <div id="A1" class="w-16 lg:w-20 bg-gray-400 p-2 rounded-xl"><p>A1</p></div>
-            <div id="A2" class="w-16 lg:w-20 bg-gray-400 p-2 rounded-xl"><p>A2</p></div>
-            <div id="A3" class="w-16 lg:w-20 bg-gray-400 p-2 rounded-xl"><p>A3</p></div>
-            <div id="A4" class="w-16 lg:w-20 bg-gray-400 p-2 rounded-xl"><p>A4</p></div>
+            <div id="A1" class="seat w-16 lg:w-20 bg-gray-400 p-2 rounded-xl"><p>A1</p></div>
+            <div id="A2" class="seat w-16 lg:w-20 bg-gray-400 p-2 rounded-xl"><p>A2</p></div>
+            <div id="A3" class="seat w-16 lg:w-20 bg-gray-400 p-2 rounded-xl"><p>A3</p></div>
+            <div id="A4" class="seat w-16 lg:w-20 bg-gray-400 p-2 rounded-xl"><p>A4</p></div>
           </div>
           <div class=" justify-around  grid grid-cols-5 mt-10">
             <div class="bg-white pl-12">B</div>
@@ -375,12 +375,12 @@
         </p>
       </div>
       <div>
-        <p class="text-white text-2xl font-bold p-6">Download Our App</p>
+        <p class="text-white lg:text-2xl font-bold p-6">Download Our App</p>
         <div class="border-2 border-white rounded-xl p-2 flex">
           <img src="images/playstore.png" alt="">
           <div>
             <p class="text-white">Get It On</p>
-          <p  class="text-white text-2xl font-bold">Google Play</p>
+          <p  class="text-white lg:text-2xl font-bold">Google Play</p>
           </div>
         </div>
       </div>
@@ -391,7 +391,7 @@
     <div>
       <p class="text-white">@all rights reserved, P-Ticket services limited.2024</p>
     </div>
-    <div class="flex  gap-5">
+    <div class="flex flex-col lg:flex-row  lg:gap-5">
       <p class="text-white">Terms & condition</p>
       <p class="text-white">Return & refund policy</p>
       <p class="text-white">Privacy policy</p>
