@@ -70,7 +70,7 @@
           <div class="max-w-md">
             <h1 class="mb-5 text-4xl font-bold text-white">End-To-End Travel With <br> <span>P Paribahan</span></h1>
             <p class="mb-5 text-white">A travel site is an online platform that facilitates the booking of flights, hotels, and other travel-related services.  Travel sites often offer user reviews, price comparisons, and deals to enhance the overall travel experience.</p>
-            <button class="btn btn-success font-medium ">Buy Tickets</button>
+            <button id="buy-tickets-btn" class="btn btn-success font-medium ">Buy Tickets</button>
           </div>
         </div>
       </div>
@@ -140,7 +140,7 @@
 
 
    <!-- input -->
-   <section class="bg-stone-50 rounded-xl  mt-14">
+   <section id="ph-paribahan"  class="bg-stone-50 rounded-xl  mt-14">
     <div class=" w-full  lg:px-10  ">
       <p class="text-center text-4xl font-bold pt-24 pb-6"> P.H Paribahan</p>
       <p class="text-center w-full px-5">Ticket booking platforms simplify and enhance the process of securing seats for buses. They offer real-time information providing convenience and additional perks such as discounts and instant confirmations.</p>
@@ -222,7 +222,7 @@
         </div>
         <hr class="border-dashed mx-7 border-gray-600 ">
         <!-- seat number -->
-         <div  id="container" class=" mt-10  flex flex-col gap-4 ">
+         <div  id="seat" class=" mt-10  flex flex-col gap-4 ">
           <div class="float-end">
             <div class="bg-gray-400 w-16 lg:w-20 rounded-xl p-2 float-right mr-5 lg:mr-16 ">
               <i class="fa-solid fa-wheelchair"></i>
@@ -230,59 +230,59 @@
           </div>
           <div class=" justify-around  grid grid-cols-5 mt-10">
             <div class="bg-white pl-12">A</div>
-            <div id="A1" class="seat w-16 lg:w-20 bg-gray-400 p-2 rounded-xl"><p>A1</p></div>
-            <div id="A2" class="seat w-16 lg:w-20 bg-gray-400 p-2 rounded-xl"><p>A2</p></div>
-            <div id="A3" class="seat w-16 lg:w-20 bg-gray-400 p-2 rounded-xl"><p>A3</p></div>
-            <div id="A4" class="seat w-16 lg:w-20 bg-gray-400 p-2 rounded-xl"><p>A4</p></div>
+            <div id="A1" class="seat w-16 lg:w-20 bg-gray-400 p-2 rounded-xl" onclick="addMySeat('A1')" ><p>A1</p></div>
+            <div id="A2" class="seat w-16 lg:w-20 bg-gray-400 p-2 rounded-xl" onclick="addMySeat('A2')" ><p>A2</p></div>
+            <div id="A3" class="seat w-16 lg:w-20 bg-gray-400 p-2 rounded-xl" onclick="addMySeat('A3')" ><p>A3</p></div>
+            <div id="A4" class="seat w-16 lg:w-20 bg-gray-400 p-2 rounded-xl" onclick="addMySeat('A4')" ><p>A4</p></div>
           </div>
           <div class=" justify-around  grid grid-cols-5 mt-10">
             <div class="bg-white pl-12">B</div>
-            <div  id="B1"  class="w-16 lg:w-20 bg-gray-400 p-2 rounded-xl"><p>B1</p></div>
-            <div  id="B2" class=" w-16 lg:w-20 bg-gray-400 p-2 rounded-xl "><p>B2</p></div>
-            <div  id="B3" class=" w-16 lg:w-20 bg-gray-400 p-2 rounded-xl"><p>B3</p></div>
-            <div  id="B4" class=" w-16 lg:w-20 bg-gray-400 p-2 rounded-xl"><p>B4</p></div>
+            <div  id="B1"  class="w-16 lg:w-20 bg-gray-400 p-2 rounded-xl" onclick="addMySeat('B1')" ><p>B1</p></div>
+            <div  id="B2" class=" w-16 lg:w-20 bg-gray-400 p-2 rounded-xl " onclick="addMySeat('B2') "><p>B2</p></div>
+            <div  id="B3" class=" w-16 lg:w-20 bg-gray-400 p-2 rounded-xl" onclick="addMySeat('B3') "><p>B3</p></div>
+            <div  id="B4" class=" w-16 lg:w-20 bg-gray-400 p-2 rounded-xl" onclick="addMySeat('B4') "><p>B4</p></div>
           </div>
           <div class=" justify-around  grid grid-cols-5 mt-10">
             <div  class="bg-white pl-12">C</div>
-            <div id="C1" class=" w-16 lg:w-20 bg-gray-400 p-2 rounded-xl"><p>C1</p></div>
-            <div id="C2" class=" w-16 lg:w-20 bg-gray-400 p-2 rounded-xl "><p>C2</p></div>
-            <div id="C3" class="w-16 lg:w-20 bg-gray-400 p-2 rounded-xl"><p>C3</p></div>
-            <div id="C4" class=" w-16 lg:w-20 bg-gray-400 p-2 rounded-xl"><p>C4</p></div>
+            <div id="C1" class=" w-16 lg:w-20 bg-gray-400 p-2 rounded-xl" onclick="addMySeat('C1')" ><p>C1</p></div>
+            <div id="C2" class=" w-16 lg:w-20 bg-gray-400 p-2 rounded-xl "onclick="addMySeat('C2')" ><p>C2</p></div>
+            <div id="C3" class="w-16 lg:w-20 bg-gray-400 p-2 rounded-xl"  onclick="addMySeat('C3')" ><p>C3</p></div>
+            <div id="C4" class=" w-16 lg:w-20 bg-gray-400 p-2 rounded-xl" onclick="addMySeat('C4')" ><p>C4</p></div>
           </div>
           <div class=" justify-around  grid grid-cols-5 mt-10">
             <div class="bg-white pl-12">D</div>
-            <div id="D1" class=" w-16 lg:w-20 bg-gray-400 p-2 rounded-xl"><p>D1</p></div>
-            <div id="D2" class=" w-16 lg:w-20 bg-gray-400 p-2 rounded-xl "><p>D2</p></div>
-            <div id="D3" class=" w-16 lg:w-20 bg-gray-400 p-2 rounded-xl"><p>D3</p></div>
-            <div id="D4" class=" w-16 lg:w-20 bg-gray-400 p-2 rounded-xl"><p>D4</p></div>
+            <div id="D1" class=" w-16 lg:w-20 bg-gray-400 p-2 rounded-xl"  onclick="addMySeat('D1')" ><p>D1</p></div>
+            <div id="D2" class=" w-16 lg:w-20 bg-gray-400 p-2 rounded-xl " onclick="addMySeat('D2')" ><p>D2</p></div>
+            <div id="D3" class=" w-16 lg:w-20 bg-gray-400 p-2 rounded-xl"  onclick="addMySeat('D3')" ><p>D3</p></div>
+            <div id="D4" class=" w-16 lg:w-20 bg-gray-400 p-2 rounded-xl"  onclick="addMySeat('D4')" ><p>D4</p></div>
           </div>
           <div class=" justify-around  grid grid-cols-5 mt-10">
             <div class="bg-white pl-12">E</div>
-            <div id="E1" class=" w-16 lg:w-20 bg-gray-400 p-2 rounded-xl"><p>E1</p></div>
-            <div id="E2" class="w-16 lg:w-20 bg-gray-400 p-2 rounded-xl "><p>E2</p></div>
-            <div id="E3" class=" w-16 lg:w-20 bg-gray-400 p-2 rounded-xl"><p>E3</p></div>
-            <div id="E4" class=" w-16 lg:w-20 bg-gray-400 p-2 rounded-xl"><p>E4</p></div>
+            <div id="E1" class=" w-16 lg:w-20 bg-gray-400 p-2 rounded-xl"onclick="addMySeat('E1')" ><p>E1</p></div>
+            <div id="E2" class="w-16 lg:w-20 bg-gray-400 p-2 rounded-xl "onclick="addMySeat('E2')" ><p>E2</p></div>
+            <div id="E3" class=" w-16 lg:w-20 bg-gray-400 p-2 rounded-xl"onclick="addMySeat('E3')" ><p>E3</p></div>
+            <div id="E4" class=" w-16 lg:w-20 bg-gray-400 p-2 rounded-xl"onclick="addMySeat('E4')" ><p>E4</p></div>
           </div>
           <div class=" justify-around  grid grid-cols-5 mt-10">
             <div class="bg-white pl-12">F</div>
-            <div id="F1" class=" w-16 lg:w-20 bg-gray-400 p-2 rounded-xl"><p>F1</p></div>
-            <div id="F2" class="w-16 lg:w-20 bg-gray-400 p-2 rounded-xl "><p>F2</p></div>
-            <div id="F3" class=" w-16 lg:w-20 bg-gray-400 p-2 rounded-xl"><p>F3</p></div>
-            <div id="4" class=" w-16 lg:w-20 bg-gray-400 p-2 rounded-xl"><p>F4</p></div>
+            <div id="F1" class=" w-16 lg:w-20 bg-gray-400 p-2 rounded-xl"onclick="addMySeat('F1')"><p>F1</p></div>
+            <div id="F2" class="w-16 lg:w-20 bg-gray-400 p-2 rounded-xl "onclick="addMySeat('F2')"><p>F2</p></div>
+            <div id="F3" class=" w-16 lg:w-20 bg-gray-400 p-2 rounded-xl"onclick="addMySeat('F3')"><p>F3</p></div>
+            <div id="F4" class=" w-16 lg:w-20 bg-gray-400 p-2 rounded-xl" onclick="addMySeat('F4')"><p>F4</p></div>
           </div>
           <div class=" justify-around  grid grid-cols-5 mt-10">
             <div class="bg-white pl-12">G</div>
-            <div id="G1" class=" w-16 lg:w-20 bg-gray-400 p-2 rounded-xl"><p>G1</p></div>
-            <div id="G2" class="w-16 lg:w-20 bg-gray-400 p-2 rounded-xl "><p>G2</p></div>
-            <div id="G3" class=" w-16 lg:w-20 bg-gray-400 p-2 rounded-xl"><p>G3</p></div>
-            <div id="G4" class=" w-16 lg:w-20 bg-gray-400 p-2 rounded-xl"><p>G4</p></div>
+            <div id="G1" class=" w-16 lg:w-20 bg-gray-400 p-2 rounded-xl" onclick="addMySeat('G1')"><p>G1</p></div>
+            <div id="G2" class="w-16 lg:w-20 bg-gray-400 p-2 rounded-xl " onclick="addMySeat('G2')"><p>G2</p></div>
+            <div id="G3" class=" w-16 lg:w-20 bg-gray-400 p-2 rounded-xl" onclick="addMySeat('G3')"><p>G3</p></div>
+            <div id="G4" class=" w-16 lg:w-20 bg-gray-400 p-2 rounded-xl" onclick="addMySeat('G4')"><p>G4</p></div>
           </div>
           <div class=" justify-around  grid grid-cols-5 mt-10">
             <div class="bg-white pl-12">H</div>
-            <div id="H1" class=" w-16 lg:w-20 bg-gray-400 p-2 rounded-xl"><p>H1</p></div>
-            <div id="H2"class="w-16 lg:w-20 bg-gray-400 p-2 rounded-xl "><p>H2</p></div>
-            <div id="H3"class=" w-16 lg:w-20 bg-gray-400 p-2 rounded-xl"><p>H3</p></div>
-            <div id="H4"class=" w-16 lg:w-20 bg-gray-400 p-2 rounded-xl"><p>H4</p></div>
+            <div id="H1"class="w-16 lg:w-20 bg-gray-400 p-2 rounded-xl" onclick="addMySeat('H1')"><p>H1</p></div>
+            <div id="H2"class="w-16 lg:w-20 bg-gray-400 p-2 rounded-xl" onclick="addMySeat('H2')"><p>H2</p></div>
+            <div id="H3"class="w-16 lg:w-20 bg-gray-400 p-2 rounded-xl" onclick="addMySeat('H3')"><p>H3</p></div>
+            <div id="H4"class="w-16 lg:w-20 bg-gray-400 p-2 rounded-xl" onclick="addMySeat('H4')"><p>H4</p></div>
           </div>
          </div>
             <!-- seat number -->
@@ -295,56 +295,50 @@
         <hr class="border-dashed mx-7 border-gray-600 ">
         </div>
         <div class="bg-slate-100 rounded-xl  mt-9  p-6 mx-4">
-           <div class="grid grid-cols-3 ">
-            <div class="">
-              <p class="font-bold">seat <span class="bg-green-500 w-4">0</span></p>
-              <hr class="border-dashed  border-gray-600 ">
-              <p class="p-4">A</p>
-              <p class="p-4">B</p>
-            </div>
-            <div class="">
-              <p class="font-bold">Class</p>
-              <hr class="border-dashed  border-gray-600 ">
-              <p class="p-4">Economy</p>
-              <p class="p-4">Economy</p>
-            </div>
-            <div class="">
-              <p class="font-bold">Price</p>
-              <hr class="border-dashed  border-gray-600 ">
-              <p class="p-4">550</p>
-              <p class="p-4">550</p>
-            </div>
-            
-           </div>
-           <hr class="border-dashed  border-gray-600 mx-4  ">
-           <div class="mt-4">
-            <div class="flex justify-between">
-            <p class="text-xl font-semibold">Total Price</p>
-            <p class="text-xl font-semibold">BDT 0000</p>
-          </div>
-          <div class="flex justify-between mt-4">
-            <p class="text-xl font-semibold">Discount Price</p>
-            <p class="text-xl font-semibold">BDT 0000</p>
-          </div>
-          
-          <div class=" pt-6">
-            <input type="text" placeholder="Have any copupon?" class="input input-bordered w-full h-16"    />
-            <button class="btn bg-green-500 text-white  absolute -ml-20  mt-2">Apply</button>
-          </div>
-          <div class="flex justify-between pt-4">
-            <p class="text-xl font-semibold">Grand Total</p> 
-            <p class="text-xl font-semibold">BDT 1100</p>
+          <div>
+           <ul>
+             <li>
+               <div class="flex justify-between">
+                 <p class="font-bold">Seat <span class="bg-green-500 rounded-md px-1" id="selected-seat">0</span></p>
+                 <p class="font-bold">class</p>
+                 <p class="font-bold">Price</p>
+             </div>
+             </li>
+           </ul>
+           <hr class="border-dashed mx-7 border-gray-600 mb-2">
+          <ul id="mySeats">
+          </ul>
           </div>
 
-          </div>
-        </div>
-       
+          <hr class="border-dashed  border-gray-600 mx-4 mt-3">
+          <div class="mt-4">
+           <div class="flex justify-between">
+           <p class="text-xl font-semibold">Total Price</p>
+           <p class="text-xl font-semibold">BDT <span id="total-price">00</span></p>
+         </div>
+         <div class="flex justify-between mt-4">
+           <p class="text-xl font-semibold">Discount Price</p>
+           <p class="text-xl font-semibold">BDT <span id="discount-price">00</span></p>
+         </div>
+         
+         <div id="coupon-div" class="pt-6">
+           <input type="text" placeholder="Have any copupon?" id="coupon-input" class="input input-bordered w-full h-16"    />
+           <button id="apply-btn" class="btn bg-gray-300 text-white  absolute -ml-20  mt-2">Apply</button>
+         </div>
+         <div class="flex justify-between pt-4">
+           <p class="text-xl font-semibold">Grand Total</p>
+           <p class="text-xl font-semibold">BDT <span id="grand-total">00</span></p>
+         </div>
+
+         </div>
+       </div>
+      
         
         <div class="p-6   flex flex-col justify-center space-y-4 mt-6">
           <p>Passenger Name*</p>
           <input type="text" placeholder="Type here" class="input input-bordered input-md w-full " />
           <p>Phone Number*</p>
-          <input type="text" placeholder="Type here" class="input input-bordered input-md w-full " />
+          <input type="text" id="phone-no" placeholder="Type here" class="input input-bordered input-md w-full " />
           <p>Email ID*</p>
           <input type="text" placeholder="Type here" class="input input-bordered input-md w-full " />
           <a href="sucess.html"><button  class=" w-full bg-green-400 text-2xl text-white font-bold py-6 rounded-xl">Next</button></a>
