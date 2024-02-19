@@ -49,7 +49,9 @@ function addMySeat(seatId) {
         });
         nextBtn.addEventListener('click', function(){
             if(phoneNoValue.toString().length === 11){
-                window.location.href = "sucess.html";
+                // window.location.href = "sucess.html";
+                my_modal_5.showModal()
+                
             }else{
                 alert('Please Enter a valid 11 digit Phone number');
             }

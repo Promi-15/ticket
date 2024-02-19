@@ -257,31 +257,31 @@
           </div>
           <div class=" justify-around  grid grid-cols-5 mt-10">
             <div class="bg-white pl-12">E</div>
-            <div id="E1" class=" w-16 lg:w-20 bg-gray-400 p-2 rounded-xl"><p>E1</p></div>
-            <div id="E2" class="w-16 lg:w-20 bg-gray-400 p-2 rounded-xl "><p>E2</p></div>
-            <div id="E3" class=" w-16 lg:w-20 bg-gray-400 p-2 rounded-xl"><p>E3</p></div>
-            <div id="E4" class=" w-16 lg:w-20 bg-gray-400 p-2 rounded-xl"><p>E4</p></div>
+            <div id="E1" class=" w-16 lg:w-20 bg-gray-400 p-2 rounded-xl" onclick="addMySeat('E1')"><p>E1</p></div>
+            <div id="E2" class="w-16 lg:w-20 bg-gray-400 p-2 rounded-xl " onclick="addMySeat('E2')"><p>E2</p></div>
+            <div id="E3" class=" w-16 lg:w-20 bg-gray-400 p-2 rounded-xl" onclick="addMySeat('E3')"><p>E3</p></div>
+            <div id="E4" class=" w-16 lg:w-20 bg-gray-400 p-2 rounded-xl" onclick="addMySeat('E4')"><p>E4</p></div>
           </div>
           <div class=" justify-around  grid grid-cols-5 mt-10">
             <div class="bg-white pl-12">F</div>
-            <div id="F1" class=" w-16 lg:w-20 bg-gray-400 p-2 rounded-xl"><p>F1</p></div>
-            <div id="F2" class="w-16 lg:w-20 bg-gray-400 p-2 rounded-xl "><p>F2</p></div>
-            <div id="F3" class=" w-16 lg:w-20 bg-gray-400 p-2 rounded-xl"><p>F3</p></div>
-            <div id="4" class=" w-16 lg:w-20 bg-gray-400 p-2 rounded-xl"><p>F4</p></div>
+            <div id="F1" class=" w-16 lg:w-20 bg-gray-400 p-2 rounded-xl" onclick="addMySeat('F1')"><p>F1</p></div>
+            <div id="F2" class="w-16 lg:w-20 bg-gray-400 p-2 rounded-xl " onclick="addMySeat('F2')"><p>F2</p></div>
+            <div id="F3" class=" w-16 lg:w-20 bg-gray-400 p-2 rounded-xl" onclick="addMySeat('F3')"><p>F3</p></div>
+            <div id="4" class=" w-16 lg:w-20 bg-gray-400 p-2 rounded-xl"  onclick="addMySeat('F4')"><p>F4</p></div>
           </div>
           <div class=" justify-around  grid grid-cols-5 mt-10">
             <div class="bg-white pl-12">G</div>
-            <div id="G1" class=" w-16 lg:w-20 bg-gray-400 p-2 rounded-xl"><p>G1</p></div>
-            <div id="G2" class="w-16 lg:w-20 bg-gray-400 p-2 rounded-xl "><p>G2</p></div>
-            <div id="G3" class=" w-16 lg:w-20 bg-gray-400 p-2 rounded-xl"><p>G3</p></div>
-            <div id="G4" class=" w-16 lg:w-20 bg-gray-400 p-2 rounded-xl"><p>G4</p></div>
+            <div id="G1" class=" w-16 lg:w-20 bg-gray-400 p-2 rounded-xl"onclick="addMySeat('G1')"><p>G1</p></div>
+            <div id="G2" class="w-16 lg:w-20 bg-gray-400 p-2 rounded-xl "onclick="addMySeat('G2')"><p>G2</p></div>
+            <div id="G3" class=" w-16 lg:w-20 bg-gray-400 p-2 rounded-xl"onclick="addMySeat('G3')"><p>G3</p></div>
+            <div id="G4" class=" w-16 lg:w-20 bg-gray-400 p-2 rounded-xl"onclick="addMySeat('G4')"><p>G4</p></div>
           </div>
           <div class=" justify-around  grid grid-cols-5 mt-10">
             <div class="bg-white pl-12">H</div>
-            <div id="H1" class=" w-16 lg:w-20 bg-gray-400 p-2 rounded-xl"><p>H1</p></div>
-            <div id="H2"class="w-16 lg:w-20 bg-gray-400 p-2 rounded-xl "><p>H2</p></div>
-            <div id="H3"class=" w-16 lg:w-20 bg-gray-400 p-2 rounded-xl"><p>H3</p></div>
-            <div id="H4"class=" w-16 lg:w-20 bg-gray-400 p-2 rounded-xl"><p>H4</p></div>
+            <div id="H1"class="w-16 lg:w-20 bg-gray-400 p-2 rounded-xl" onclick="addMySeat('H1')"><p>H1</p></div>
+            <div id="H2"class="w-16 lg:w-20 bg-gray-400 p-2 rounded-xl" onclick="addMySeat('H2')"><p>H2</p></div>
+            <div id="H3"class="w-16 lg:w-20 bg-gray-400 p-2 rounded-xl" onclick="addMySeat('H3')"><p>H3</p></div>
+            <div id="H4"class="w-16 lg:w-20 bg-gray-400 p-2 rounded-xl" onclick="addMySeat('H4')"><p>H4</p></div>
           </div>
          </div>
             <!-- seat number -->
@@ -339,8 +339,36 @@
           <input type="number" id="phone-no" placeholder="Type here" class="input input-bordered input-md w-full " />
           <p>Email ID*</p>
           <input type="text" placeholder="Type here" class="input input-bordered input-md w-full " />
-          <button id="next-btn" class=" w-full bg-gray-300 text-2xl text-white font-bold py-6 rounded-xl">Next</button>
-          
+          <!-- <button id="next-btn" class=" w-full bg-gray-300 text-2xl text-white font-bold py-6 rounded-xl">Next</button> -->
+          <!-- modal
+           -->
+           <button  id="next-btn" class=" w-full bg-gray-300 text-2xl text-white font-bold py-6 rounded-xl" onclick="my_modal_5.showModal()">Next</button>
+           <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+             <div class="modal-box">
+              <img src="images/success.png" class="pl-40" alt="">
+              <h1 class="text-5xl font-semibold text-green-400 text-center">SUCCESS</h1>
+              <p class="py-6 font-medium text-black text-center">Thank you for Booking Our Bus Seats.
+                  We are working hard to find the best service and deals for your email <br> <span
+                      class="text-gray-400 font-normal">
+                      Shortly you will find a confirmation in your email.
+                  </span>
+              </p>
+             
+               <div class="modal-action">
+                 <form method="dialog">
+                   <!-- if there is a button in form, it will close the modal -->
+                   <!-- <button id="success-btn" class=" w-full  bg-green-500 text-white"> -->
+                    <button class="btn btn-wide justify-center bg-green-500 text-white mr-28"> Continue</button>
+                   
+                <!-- </button> -->
+                 </form>
+               </div>
+             </div>
+           </dialog>
+
+
+
+           <!-- modal -->
          <div class="flex justify-between">
           <a class="link link-neutral">Terms and Conditions</a>
           <a class="link link-neutral">Cancellation Policy</a>
@@ -381,7 +409,7 @@
   <hr class="border-dashed px-5 mt-8">
   <div class="flex justify-between p-4">
     <div>
-      <p class="text-white">@all rights reserved, P-Ticket services limited.2024</p>
+      <p class="text-white px-9">@all rights reserved, P-Ticket services limited.2024</p>
     </div>
     <div class="flex  gap-5">
       <p class="text-white">Terms & condition</p>
