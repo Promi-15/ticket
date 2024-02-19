@@ -1,32 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Success</title>
 
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
-<script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body  >
-    
- 
+
+<body>
+
+
     <div class="hero min-h-screen bg-base-200">
         <div class="hero-content text-center bg-white rounded-xl p-10 justify-center">
-          <div class="max-w-md space-y-4 ">
-            <img src="images/success.png" alt="" class="pl-40">
-            <h1 class="text-5xl font-semibold text-green-400">SUCCESS</h1>
-            <p class="py-6 font-medium text-black">Thank you for Booking Our Bus Seats. 
-                We are working hard to find the best service and deals for your email <br> <span class="text-gray-400 font-normal">
-                    Shortly you will find a confirmation in your email.
-                </span>
-            </p>
-                    <button class="btn btn-wide rounded-3xl bg-green-500 text-white">
-                        Continue
-                    </button>
-          </div>
+            <div class="max-w-md space-y-4 ">
+                <img src="images/success.png" alt="" class="pl-40">
+                <h1 class="text-5xl font-semibold text-green-400">SUCCESS</h1>
+                <p class="py-6 font-medium text-black">Thank you for Booking Our Bus Seats.
+                    We are working hard to find the best service and deals for your email <br> <span
+                        class="text-gray-400 font-normal">
+                        Shortly you will find a confirmation in your email.
+                    </span>
+                </p>
+                <button id="success-btn" class="btn btn-wide rounded-3xl bg-green-500 text-white">
+                    Continue
+                </button>
+            </div>
         </div>
-      </div>
-    
+    </div>
+<script>
+    const successBtn = document.getElementById('success-btn');
+    successBtn.addEventListener('click', function(){
+        window.location.href = 'index.html';
+    })
+</script>
 </body>
+
 </html>
